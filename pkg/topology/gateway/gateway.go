@@ -23,9 +23,9 @@ import (
 	"k8s.io/apimachinery/pkg/apis/meta/v1/unstructured"
 	"k8s.io/apimachinery/pkg/runtime"
 
+	"github.com/flomesh-io/gwctl/pkg/common"
+	"github.com/flomesh-io/gwctl/pkg/topology"
 	gatewayv1 "sigs.k8s.io/gateway-api/apis/v1"
-	"sigs.k8s.io/gwctl/pkg/common"
-	"sigs.k8s.io/gwctl/pkg/topology"
 )
 
 var (

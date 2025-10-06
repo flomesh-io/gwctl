@@ -24,8 +24,8 @@ import (
 	graphviz "github.com/goccy/go-graphviz"
 	"github.com/goccy/go-graphviz/cgraph"
 
-	"sigs.k8s.io/gwctl/pkg/common"
-	"sigs.k8s.io/gwctl/pkg/topology"
+	"github.com/flomesh-io/gwctl/pkg/common"
+	"github.com/flomesh-io/gwctl/pkg/topology"
 )
 
 // TODO:

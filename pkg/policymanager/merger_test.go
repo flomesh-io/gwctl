@@ -21,10 +21,10 @@ import (
 	"testing"
 	"time"
 
+	"github.com/flomesh-io/gwctl/pkg/common"
 	"github.com/google/go-cmp/cmp"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/apis/meta/v1/unstructured"
-	"sigs.k8s.io/gwctl/pkg/common"
 )
 
 func TestMergePoliciesOfSimilarKind(t *testing.T) {

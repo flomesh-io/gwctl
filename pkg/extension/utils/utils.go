@@ -17,9 +17,9 @@ limitations under the License.
 package utils
 
 import (
-	"sigs.k8s.io/gwctl/pkg/extension/notfoundrefvalidator"
-	"sigs.k8s.io/gwctl/pkg/extension/refgrantvalidator"
-	"sigs.k8s.io/gwctl/pkg/topology"
+	"github.com/flomesh-io/gwctl/pkg/extension/notfoundrefvalidator"
+	"github.com/flomesh-io/gwctl/pkg/extension/refgrantvalidator"
+	"github.com/flomesh-io/gwctl/pkg/topology"
 )
 
 func AggregateAnalysisErrors(node *topology.Node) ([]error, error) {

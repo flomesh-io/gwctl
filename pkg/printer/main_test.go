@@ -30,10 +30,10 @@ import (
 
 	"k8s.io/klog/v2"
 
+	"github.com/flomesh-io/gwctl/pkg/common"
+	"github.com/flomesh-io/gwctl/pkg/policymanager"
+	"github.com/flomesh-io/gwctl/pkg/topology"
 	gatewayv1 "sigs.k8s.io/gateway-api/apis/v1"
-	"sigs.k8s.io/gwctl/pkg/common"
-	"sigs.k8s.io/gwctl/pkg/policymanager"
-	"sigs.k8s.io/gwctl/pkg/topology"
 )
 
 func TestMain(m *testing.M) {

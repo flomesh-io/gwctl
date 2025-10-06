@@ -24,13 +24,13 @@ import (
 	"golang.org/x/exp/maps"
 	"k8s.io/apimachinery/pkg/util/duration"
 
-	"sigs.k8s.io/gwctl/pkg/extension/directlyattachedpolicy"
-	"sigs.k8s.io/gwctl/pkg/extension/gatewayeffectivepolicy"
-	"sigs.k8s.io/gwctl/pkg/extension/refgrantvalidator"
-	extensionutils "sigs.k8s.io/gwctl/pkg/extension/utils"
-	"sigs.k8s.io/gwctl/pkg/policymanager"
-	"sigs.k8s.io/gwctl/pkg/topology"
-	topologygw "sigs.k8s.io/gwctl/pkg/topology/gateway"
+	"github.com/flomesh-io/gwctl/pkg/extension/directlyattachedpolicy"
+	"github.com/flomesh-io/gwctl/pkg/extension/gatewayeffectivepolicy"
+	"github.com/flomesh-io/gwctl/pkg/extension/refgrantvalidator"
+	extensionutils "github.com/flomesh-io/gwctl/pkg/extension/utils"
+	"github.com/flomesh-io/gwctl/pkg/policymanager"
+	"github.com/flomesh-io/gwctl/pkg/topology"
+	topologygw "github.com/flomesh-io/gwctl/pkg/topology/gateway"
 )
 
 func (p *TablePrinter) printBackend(backendNode *topology.Node, w io.Writer) error {

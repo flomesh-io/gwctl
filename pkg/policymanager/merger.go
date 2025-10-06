@@ -21,8 +21,8 @@ import (
 	"fmt"
 
 	jsonpatch "github.com/evanphx/json-patch"
+	"github.com/flomesh-io/gwctl/pkg/common"
 	"k8s.io/apimachinery/pkg/apis/meta/v1/unstructured"
-	"sigs.k8s.io/gwctl/pkg/common"
 )
 
 // MergePoliciesOfSimilarKind will convert a slice a policies to a map of
