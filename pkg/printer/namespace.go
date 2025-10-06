@@ -23,9 +23,9 @@ import (
 	corev1 "k8s.io/api/core/v1"
 	"k8s.io/apimachinery/pkg/util/duration"
 
-	"sigs.k8s.io/gwctl/pkg/extension/directlyattachedpolicy"
-	"sigs.k8s.io/gwctl/pkg/policymanager"
-	"sigs.k8s.io/gwctl/pkg/topology"
+	"github.com/flomesh-io/gwctl/pkg/extension/directlyattachedpolicy"
+	"github.com/flomesh-io/gwctl/pkg/policymanager"
+	"github.com/flomesh-io/gwctl/pkg/topology"
 )
 
 func (p *TablePrinter) printNamespace(namespaceNode *topology.Node, w io.Writer) error {

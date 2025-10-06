@@ -23,11 +23,11 @@ import (
 	"k8s.io/apimachinery/pkg/runtime"
 	"k8s.io/klog/v2"
 
+	"github.com/flomesh-io/gwctl/pkg/common"
+	"github.com/flomesh-io/gwctl/pkg/topology"
+	topologygw "github.com/flomesh-io/gwctl/pkg/topology/gateway"
 	gatewayv1 "sigs.k8s.io/gateway-api/apis/v1"
 	gatewayv1beta1 "sigs.k8s.io/gateway-api/apis/v1beta1"
-	"sigs.k8s.io/gwctl/pkg/common"
-	"sigs.k8s.io/gwctl/pkg/topology"
-	topologygw "sigs.k8s.io/gwctl/pkg/topology/gateway"
 )
 
 const (

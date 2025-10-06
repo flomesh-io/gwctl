@@ -29,9 +29,9 @@ builds:
       # Reduce the size of the binary. Ref: https://pkg.go.dev/cmd/link
       - -s -w 
       # Embed versioning and build information in the binary.
-      - -X sigs.k8s.io/gwctl/pkg/version.version={{.Version}}
-      - -X sigs.k8s.io/gwctl/pkg/version.gitCommit={{.FullCommit}}
-      - -X sigs.k8s.io/gwctl/pkg/version.buildDate={{.Date}}
+      - -X github.com/flomesh-io/gwctl/pkg/version.version={{.Version}}
+      - -X github.com/flomesh-io/gwctl/pkg/version.gitCommit={{.FullCommit}}
+      - -X github.com/flomesh-io/gwctl/pkg/version.buildDate={{.Date}}
 
 archives:
   - format: tar.gz

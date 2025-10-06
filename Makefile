@@ -32,7 +32,7 @@ build: deps
 	@echo "Building gwctl..."
 	@echo "GIT_COMMIT=$(GIT_COMMIT)"
 	@echo "BUILD_DATE=$(BUILD_DATE)"
-	go build -ldflags="-X sigs.k8s.io/gwctl/pkg/version.gitCommit=$(GIT_COMMIT) -X sigs.k8s.io/gwctl/pkg/version.buildDate=$(BUILD_DATE)" -o $(BIN_DIR)/gwctl main.go
+	go build -ldflags="-X github.com/flomesh-io/gwctl/pkg/version.gitCommit=$(GIT_COMMIT) -X github.com/flomesh-io/gwctl/pkg/version.buildDate=$(BUILD_DATE)" -o $(BIN_DIR)/gwctl main.go
 	@echo "Done"
 
 .PHONY: clean

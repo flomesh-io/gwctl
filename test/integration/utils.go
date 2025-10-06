@@ -40,8 +40,8 @@ import (
 	clientgotesting "k8s.io/client-go/testing"
 	cmdtesting "k8s.io/kubectl/pkg/cmd/testing"
 
+	"github.com/flomesh-io/gwctl/pkg/common"
 	gatewayv1 "sigs.k8s.io/gateway-api/apis/v1"
-	"sigs.k8s.io/gwctl/pkg/common"
 )
 
 type TestFactory struct {

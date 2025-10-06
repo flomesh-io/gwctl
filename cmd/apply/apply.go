@@ -30,7 +30,7 @@ import (
 	"k8s.io/cli-runtime/pkg/resource"
 	"k8s.io/utils/ptr"
 
-	"sigs.k8s.io/gwctl/pkg/common"
+	"github.com/flomesh-io/gwctl/pkg/common"
 )
 
 const (

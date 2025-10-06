@@ -21,8 +21,8 @@ import (
 
 	"k8s.io/klog/v2"
 
-	"sigs.k8s.io/gwctl/pkg/common"
-	"sigs.k8s.io/gwctl/pkg/topology"
+	"github.com/flomesh-io/gwctl/pkg/common"
+	"github.com/flomesh-io/gwctl/pkg/topology"
 )
 
 const (

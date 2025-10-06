@@ -24,8 +24,8 @@ import (
 	"github.com/spf13/pflag"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 
+	"github.com/flomesh-io/gwctl/pkg/common"
 	gatewayv1 "sigs.k8s.io/gateway-api/apis/v1"
-	"sigs.k8s.io/gwctl/pkg/common"
 )
 
 type ForFlag string

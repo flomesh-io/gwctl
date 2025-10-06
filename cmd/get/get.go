@@ -28,17 +28,17 @@ import (
 	"k8s.io/cli-runtime/pkg/genericiooptions"
 	"k8s.io/utils/clock"
 
-	"sigs.k8s.io/gwctl/pkg/common"
-	"sigs.k8s.io/gwctl/pkg/extension"
-	"sigs.k8s.io/gwctl/pkg/extension/directlyattachedpolicy"
-	"sigs.k8s.io/gwctl/pkg/extension/gatewayeffectivepolicy"
-	"sigs.k8s.io/gwctl/pkg/extension/notfoundrefvalidator"
-	"sigs.k8s.io/gwctl/pkg/extension/refgrantvalidator"
-	gwctlflags "sigs.k8s.io/gwctl/pkg/flags"
-	"sigs.k8s.io/gwctl/pkg/policymanager"
-	"sigs.k8s.io/gwctl/pkg/printer"
-	"sigs.k8s.io/gwctl/pkg/topology"
-	topologygw "sigs.k8s.io/gwctl/pkg/topology/gateway"
+	"github.com/flomesh-io/gwctl/pkg/common"
+	"github.com/flomesh-io/gwctl/pkg/extension"
+	"github.com/flomesh-io/gwctl/pkg/extension/directlyattachedpolicy"
+	"github.com/flomesh-io/gwctl/pkg/extension/gatewayeffectivepolicy"
+	"github.com/flomesh-io/gwctl/pkg/extension/notfoundrefvalidator"
+	"github.com/flomesh-io/gwctl/pkg/extension/refgrantvalidator"
+	gwctlflags "github.com/flomesh-io/gwctl/pkg/flags"
+	"github.com/flomesh-io/gwctl/pkg/policymanager"
+	"github.com/flomesh-io/gwctl/pkg/printer"
+	"github.com/flomesh-io/gwctl/pkg/topology"
+	topologygw "github.com/flomesh-io/gwctl/pkg/topology/gateway"
 )
 
 func NewCmd(factory common.Factory, iostreams genericiooptions.IOStreams, isDescribe bool) *cobra.Command {

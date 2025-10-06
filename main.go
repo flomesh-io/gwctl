@@ -16,7 +16,7 @@ limitations under the License.
 
 package main
 
-import "sigs.k8s.io/gwctl/cmd"
+import "github.com/flomesh-io/gwctl/cmd"
 
 func main() {
 	cmd.Execute()

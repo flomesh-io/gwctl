@@ -26,12 +26,12 @@ import (
 	"k8s.io/cli-runtime/pkg/genericiooptions"
 	"k8s.io/klog/v2"
 
-	cmdanalyze "sigs.k8s.io/gwctl/cmd/analyze"
-	cmdapply "sigs.k8s.io/gwctl/cmd/apply"
-	cmddelete "sigs.k8s.io/gwctl/cmd/delete"
-	cmdget "sigs.k8s.io/gwctl/cmd/get"
-	"sigs.k8s.io/gwctl/pkg/common"
-	"sigs.k8s.io/gwctl/pkg/version"
+	cmdanalyze "github.com/flomesh-io/gwctl/cmd/analyze"
+	cmdapply "github.com/flomesh-io/gwctl/cmd/apply"
+	cmddelete "github.com/flomesh-io/gwctl/cmd/delete"
+	cmdget "github.com/flomesh-io/gwctl/cmd/get"
+	"github.com/flomesh-io/gwctl/pkg/common"
+	"github.com/flomesh-io/gwctl/pkg/version"
 )
 
 func newRootCmd() *cobra.Command {
