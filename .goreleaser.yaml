@@ -3,6 +3,8 @@
 # For local testing, use:
 # 
 #   goreleaser release --snapshot --clean
+version: 2
+
 project_name: gwctl
 
 before:
@@ -34,7 +36,7 @@ builds:
       - -X github.com/flomesh-io/gwctl/pkg/version.buildDate={{.Date}}
 
 archives:
-  - format: tar.gz
+  - formats: tar.gz
     # This name template makes the OS and Arch compatible with the results of
     # uname.
     name_template: >-
@@ -47,4 +49,4 @@ archives:
     # Use zip for windows archives
     format_overrides:
     - goos: windows
-      format: zip
+      formats: zip
