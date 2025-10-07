@@ -25,7 +25,7 @@ about potential issues.
 2. Clone the project repository:
    
    ```bash
-   git clone https://github.com/kubernetes-sigs/gwctl.git && cd gwctl
+   git clone https://github.com/flomesh-io/gwctl.git && cd gwctl
    ```
 
 3. Build the project:

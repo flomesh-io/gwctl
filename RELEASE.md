@@ -62,7 +62,7 @@
 5. **Create a GitHub release:**
 
     - Go to the project's GitHub repository and navigate to the [New Releases
-      page](https://github.com/kubernetes-sigs/gwctl/releases/new).
+      page](https://github.com/flomesh-io/gwctl/releases/new).
     - Select the newly created tag (`v${MAJOR}.${MINOR}.${PATCH}`) from the "Choose a tag" dropdown.
     - Attach the relevant release artifacts (`.tar.gz` and `.zip` files) from the `dist` directory.
     - Publish the release.
