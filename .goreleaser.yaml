@@ -41,6 +41,7 @@ archives:
     # uname.
     name_template: >-
       {{ .ProjectName }}_
+      {{ .Version }}_
       {{- title .Os }}_
       {{- if eq .Arch "amd64" }}x86_64
       {{- else if eq .Arch "386" }}i386
@@ -50,3 +51,39 @@ archives:
     format_overrides:
     - goos: windows
       formats: zip
+
+changelog:
+  sort: asc
+  use: github
+  filters:
+    exclude:
+      - '^docs:'
+      - '^test:'
+      - '^revert:'
+      - '^chore:'
+      - typo
+      - Merge pull request
+      - Merge branch
+      - go mod tidy
+  groups:
+    - title: Features
+      regexp: "^.*feat[(\\w)]*:+.*$"
+      order: 0
+    - title: 'Bug fixes'
+      regexp: "^.*fix[(\\w)]*:+.*$"
+      order: 1
+    - title: Others
+      order: 999
+
+release:
+  prerelease: auto
+  mode: replace
+  replace_existing_artifacts: true
+  header: |
+    ## {{ tolower .ProjectName }} {{ .Tag }}
+    
+    Welcome to this new release!
+  footer: |
+    ## Thanks!
+    
+    Those were the changes on {{ .Tag }}!
